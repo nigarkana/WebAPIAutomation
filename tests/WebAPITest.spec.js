@@ -85,7 +85,6 @@ test ("Client App Login", async({page})=> {
             }
             
         }
-        //await page.waitForTimeout(5000);
         const orderIdDetails = await page.locator(".col-text").textContent();
         await expect(orderId.includes(orderIdDetails)).toBeTruthy();
     }
